@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+}
+
+.sign-up-container {
+    margin: 5% auto;
+    max-width: 700px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 20px;
+    background: white;
+    z-index:1
+}
+
+.sign-up {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9370db;
+    width: 100%;
+}
+
+
+
+.email, .name, .pass {
+    height: 60px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #FFF;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: Karla;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.container-items {
+    padding-top: 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center the content */
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .log-button {
+    width: 100%;
+    max-width: 575px; 
+    margin-top: 32px;
+    border-radius: 23.011px;
+    background: purple;
+    color: #FFF;
+    text-align: center;
+    font-family: Karla;
+    font-size: 33.749px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43.874px; 
+
+  }
+  
+  .already-account {
+    text-align: center;
+    font-size: 20px;
+}
+
+  .already-button {
+    background-color: white;
+    border: none;
+    color: var(--Paragraph, #32403B);
+    font-family: Karla;
+    font-size: 21.477px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.92px;
+    text-decoration-line: underline;
+  }
+
+.account-head {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+.left-top {
+    position: absolute;
+    left: -100px; /* Adjust the position as needed */
+    top: -100px; /* Adjust the position as needed */
+    width: 500px; /* Adjust the size as needed */
+    height: 500px; /* Adjust the size as needed */
+    transform: rotate(-45deg);
+    flex-shrink: 0;
+    border-radius: 160px;
+    background: var(--Box, #8a2be2);
+}
+
+.right-top {
+    position: absolute;
+    right: -100px; /* Adjust the position as needed */
+    bottom: -100px; /* Adjust the position as needed */
+    width: 500px; /* Adjust the size as needed */
+    height: 500px; /* Adjust the size as needed */
+    transform: rotate(-45deg);
+    flex-shrink: 0;
+    border-radius: 160px;
+    background: var(--Box, #8a2be2);
+}
+
+.decorative-elements {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    transform: rotate(-45deg);
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #8a2be2;
+}
+
+.left-top {
+    left: -50px;
+    top: -50px;
+}
+
+.right-top {
+    right: -50px;
+    bottom: -50px;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .sign-up-container {
+        margin: 5% auto;
+        max-width: 700px;
+        width: 80%;
+        padding: 20px;
+    }
+
+    .container-items {
+        padding-top: 68px;
+    }
+
+    .email, .name, .pass {
+        height: 85px;
+        font-size: 23px;
+    }
+
+    .log-button {
+        height: 90px;
+        width: 391px;
+        font-size: 33.75px;
+    }
+
+    .account-head {
+        font-size: 55.23px;
+    }
+
+    .already-account {
+        font-size: 21.48px;
+    }
+
+    .left-top, .right-top {
+        display: block;
+    }
+}
